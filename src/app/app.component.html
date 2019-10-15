@@ -1,0 +1,48 @@
+<h1>
+  Raport
+</h1>
+
+<section class="header">
+
+    <div >
+        <input id="office" placeholder="Lokal" #office (keyup.enter)="onEnter(office.value)">
+    </div>
+
+   
+
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker1" placeholder="Data od:" (dateInput)="dateFrom('input', $event)" (dateChange)="dateFrom('change', $event)">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+          <input matInput [matDatepicker]="picker2" placeholder="Data do:" (dateInput)="dateTo('input', $event)" (dateChange)="dateTo('change', $event)">
+          <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+
+</section>
+
+<section class="tableContent">
+  <ul class="report-list">
+    <table class="content">
+        <tr>
+            <th>Nazwa</th>
+            <th>Data</th>
+            <th>Godzina</th>
+            <th>Uzytkownik</th>
+            <th>Lokal</th>
+          </tr>
+         <tr *ngFor="let report of reports">
+        <th>{{report.title}}</th>
+        <th>{{report.date}}</th>
+        <th>{{report.time}}</th>
+        <th>{{report.user}}</th>
+        <th>{{report.office}}</th>
+      </tr> 
+      
+    </table>
+  </ul>
+
+</section>

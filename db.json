@@ -1,0 +1,39 @@
+{
+    "reports": [
+      {
+        "id": 1,
+        "title": "Test 1 ",
+        "date": "2018-02-23T12:00.000Z",
+        "user": "User",
+        "office": "1"
+      },
+      {
+        "id": 2,
+        "title": "Test 2 ",
+        "date": "2018-02-24T12:00.000Z",
+        "user": "User",
+        "office": "1"
+      },
+      {
+        "id": 3,
+        "title": "Test 3 ",
+        "date": "2018-02-26T12:00.000Z",
+        "user": "User",
+        "office": "1"
+      },
+      {
+        "id": 4,
+        "title": "Test 4 ",
+        "date": "2018-02-26T12:00.000Z",
+        "user": "User",
+        "office": "4"
+      },
+      {
+        "id": 5,
+        "title": "Test 5 ",
+        "date": "2018-02-26T12:00.000Z",
+        "user": "User",
+        "office": "3"
+      }
+    ]
+  }
